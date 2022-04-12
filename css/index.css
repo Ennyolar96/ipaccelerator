@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    overflow-x: hidden;
+}
+.fixedheading{
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+}
+.fixedheading img{
+    width: 25px;
+    height: 20px;
+    margin: 8px 0 0 20px;
+    color: #fff;
+}
+.companyname{
+    margin: -30px 0 0 0px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a.visit{
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    margin: -25px 20px 0 0;
+    color: #fff;
+    font-size: .9rem;
+}
+a.visit span{
+    color: #f73;
+}
+.maincontainer{
+    padding:3%;
+}
+h1,h2,h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(0, 0,0,.7);
+}
+p{
+    color: gray;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.numberul{
+    list-style-type:decimal;
+}
+.squareul{
+    list-style-type: square;
+}
+ul{
+    color: gray;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+@media screen and (max-width:500px) {
+    .maincontainer{
+        margin: 5% 0 0 0;
+    }
+}
+@media screen and (max-width:300px) {
+    .companyname{
+        font-size: 1rem;
+    }
+    a.visit{
+        font-size: .6rem;
+        margin: -15px 20px 0 0;
+    }
+}
