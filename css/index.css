@@ -6,56 +6,117 @@ body{
     font-size: 100%;
     font-weight: 500;
     overflow-x: hidden;
+    background: linear-gradient(to top, gray -20%, #f0f0f0 120%);
 }
 .container{
     position: relative;
     overflow-x: hidden;
 }
-.fixedheading{
-    background-color: #000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 40px;
+.overContainer{
+    box-shadow: 0 0 10px black;
+    margin: 50px 200px;
+    background-color: #fff;
 }
-.fixedheading img{
-    width: 25px;
-    height: 20px;
-    margin: 8px 0 0 20px;
-    color: #fff;
-}
-.companyname{
-    margin: -30px 0 0 0px;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-a.visit{
-    text-align: right;
+.header{
+    overflow: hidden;
+    /* padding: 20px 30px; */
+  }
+  /* styling the header link */
+  .header a {
+    float: left;
+    color: gray;
+    text-align: center;
+    padding: 12px;
     text-decoration: none;
+    font-size: 1.2em;
+    line-height: 25px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-family:'Poppins', sans-serif;
+  }
+  /* styling the logo */
+  
+  .header a.logo{
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 0;
+  }
+  .header a.logo:hover{
+    background-color:transparent;
+  }
+  .header a.active{
+    /* background-color: dodgerblue; */
+    color: rgba(243, 115, 53, 1);
+  }
+  .header-right{
+    float: none;
+    margin-left: 300px;
+  }
+  .header .icon {
+      display: none;
+    }
+    /*  the headers section */
+.imagediv{
+    margin: 20px;
+}
+.imagediv a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 0 0 50px;
+    color: #000;
+}
+.imagediv img{
+    height: 30px;
+    width: 200px;
+    margin: 0 0 0 20px;
+}
+.divheading{
+    background-image: url("/images/lab-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+.seconddiv{
+    background-color: #f84;
+    height: 150px;
+    width: 60%;
+    position: absolute;
+    top: 100px;
+    border-radius:0 8px 0 0;
+}
+h1.h1color{
+    color:#fff;
     display: block;
-    margin: -25px 20px 0 0;
-    color: #fff;
-    font-size: .9rem;
+    margin:40px 20px;
 }
-a.visit span{
-    color: #f73;
-}
+/* The container maincontainer is inside */
 .maincontainer{
     padding:3%;
 }
-h1,h2,h3{
+/*  the headings */
+h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     font-size: 1.5rem;
     color: rgba(0, 0,0,.7);
 }
+/* all p tags on the page */
 p{
     color: gray;
     font-size: .9rem;
     font-weight: 500;
     line-height: 1.8;
+}
+/* the container that contain all the text and form */
+.mainsection{
+    display: flex;
+}
+/* first section the section with text */
+.firstsection{
+    width: 65%;
+    margin-right: 50px;
 }
 .numberul{
     list-style-type:decimal;
@@ -69,12 +130,109 @@ ul{
     font-weight: 500;
     line-height: 1.8;
 }
+
+/* second second the section that contain the forms */
+.secondsection{
+    width: 30%;
+}
+.fleximagetext{
+    display: flex;
+}
+.fleximagetext img{
+    width: 100px;
+    height: 100px;
+}
+#form{
+    margin: 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 4px;
+        font-size: 12px;
+        box-shadow: 0 0 2px black;
+}
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 95%;
+    outline: none;
+}
+.input-control textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 95%;
+    max-height: 100px;
+    outline: none;
+}
+#form button{
+    display: block;
+    margin: 20px 0 20px auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+.sign{
+    color: red;
+}
+@media screen and (max-width:1024px) {
+.overContainer{
+    margin: 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .overContainer{
+        margin: 50px 30px;
+        }
+        h1.h1color{
+            font-size: 1.2rem;
+        }
+    .mainsection{
+       flex-direction: column;
+    }
+    .firstsection{
+        width: 100%;
+    }
+    .secondsection{
+        width: 100%;
+    }
+}
 @media screen and (max-width:500px) {
+    .overContainer{
+        margin: 50px 5px;
+        }
+        .seconddiv{
+            width: 70%;
+        }
+        h1.h1color{
+            font-size: 1.2rem;
+            margin:20px 20px;
+        }
     .maincontainer{
         margin: 5% 0 0 0;
     }
 }
 @media screen and (max-width:300px) {
+    .overContainer{
+        margin: 50px -5px;
+        }
+        .seconddiv{
+            height: 150px;
+            width: 90%;
+            top: 100px;
+        }
+        h1.h1color{
+            font-size: 1rem;
+            margin:20px 20px;
+        }
     .companyname{
         font-size: 1rem;
     }
