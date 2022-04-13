@@ -47,23 +47,25 @@
                         <li>Enjoy reduction of about 40-50% in the cost of protecting the IPRs in the local or foreign economy (depending on the nature/type of the asset);</li>
                         <li>Have opportunity to access to our commercial line to exploit the assets commercially.</li>
                     </ul>
-                    <h2>Eligibility</h2>
+                    <h2>Eligibility Criteria</h2>
                     <ul class="numberul">
-                        <li>Applicants must be Africans who are individuals and entities providing STEM (Sciences, Technology, Engineering, and Mathematics) related solution to meet market or social need, creators and designers; including game designs, industrial designs, etc., SMEs and Startups.</li>
-                        <li>They must have at least one unregistered assets in their possession, such as:</li>
-                        <ul class="squareul">
-                            <li>Product idea or invention that solves problems in the local economy and which could be scaled for export markets;</li>
-                            <li>Logo that is connected to a product, brand, or company;</li>
-                            <li>Design in terms of shape of object that is capable of application in the industrial domain or otherwise.</li>
-                        </ul>
-                        <li>Application is not restricted to any age group or range.</li>
+                        <li>Applicants must be nationals of one of the following ten (10) African countries: Nigeria, Kenya, Ghana, South Africa, Tanzania, Zimbabwe, Somalia, Liberia, Zambia, and Sierra Leone. However, you do not need to reside in the country at the time of the application.</li>
+                        <li>You must be an individual or entity providing STEM (Sciences, Technology, Engineering, and Mathematics) related solutions to meet market or social needs, designers of industrial/entertainment assets, or SMEs and Startups.</li>
+                        <li>You must have at least one intellectual property in your possession, for which you are willing to seek protection in your home or foreign country. Example include:</li>
+                            <ul class="squareul">
+                                <li>Product idea or invention that solves problems in the local economy and which could be scaled for export markets;</li>
+                                <li>Logo that is connected to a product, brand, or company;</li>
+                                <li>Design in terms of shape of object that is capable of application in the industrial domain or otherwise; or.</li>
+                                <li>Plant variety.</li>
+                            </ul>
+                        <li>Application is open to all age groups and gender.</li>
                     </ul>
                     <h2>Process</h2>
-                    <p>Application period: April 13, 2022 to May 13, 2022</p>
-                    <p>Application processing: May 14, 2022 to May 31, 2022</p>
-                    <p>IP Development Workshop: June 3, 2022 to June 24, 2022</p>
-                    <p>Assets filling and registration, commences on July 1, 2022</p>
-                    <p>Access to commercial line commences continues round the years</p>
+                    <p>Application period: April 15<sup>th</sup>, 2022 to May 14<sup>th</sup>, 2022</p>
+                    <p>Application processing: May 15<sup>th</sup>, 2022 to May 31<sup>st</sup>, 2022</p>
+                    <p>IP Development Workshop: June 3<sup>rd</sup>, 2022 to June 24<sup>th</sup>, 2022</p>
+                    <p>Assets filling and registration commences on July 1<sup>st</sup>, 2022</p>
+                    <p>Access to commercial line continues round the years</p>
                     
                     <h3>Share of incentive for Protection</h3>
                     <p>Patents and Utility models 50%</p>
@@ -86,15 +88,35 @@
 
                         <div class="input-control">
                             <label for="Email">Email <span class="sign">*</span></label>
-                        <input type="email" name="name" id="email" required>
+                        <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="country">Country <span class="sign">*</span></label>
+                        <input type="text" name="country" id="country" required>
+                        <p id="your"></p>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="country">Select your IP type<span class="sign">*</span></label>
+                            <select name="IP_Type" id="">
+                                <option value="Invention">Invention</option>
+                                <option value="Design">Design</option>
+                                <option value="Brand and logo">Brand and logo</option>
+                                <option value="Plant varieties">Plant varieties</option>
+                                <option value="Copyright">Copyright</option>
+                            </select>
                         </div>
 
                        <div class="input-control">
                         <label for="message">Message <span class="sign">*</span></label>
                         <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                        </div>
-                        
-                        <button type="submit">Submit</button>
+
+                        <input type="checkbox" name="confirm" id="confirm" onclick="open_btn(this)">
+                        <label for="">I satisfy that I did not disclose any confidential/technical information about my intellectual property.</label>
+
+                        <button type="submit" disabled id="btn">Submit</button>
                     </form>
                 </section>
 
@@ -102,6 +124,7 @@
         </div>
         </div>    
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
     

@@ -14,7 +14,7 @@ body{
 }
 .overContainer{
     box-shadow: 0 0 5px black;
-    margin: 50px 200px;
+    margin: 20px 150px;
     background-color: #fff;
 }
     /*  the headers section */
@@ -24,7 +24,7 @@ body{
 }
 /* The apply button */
 a.apply{
-    margin: 0 20px;
+    margin: 10px 140px 20px 20px;
     background-color: #f84;
     text-decoration: none;
     padding:2px 20px;
@@ -35,13 +35,13 @@ a.apply{
 a.accelerator{
     text-decoration: none;
     font-size: 1.2rem;
-    margin: 0 0 0 auto;
-    color: #000;
+    margin: 10px 0 0 auto;
+    color: gray;
 }
 .imagediv img{
-    height: 30px;
+    height: 50px;
     width: 200px;
-    margin: 0 0 0 20px;
+    margin: -10px 0 0 130px;
 }
 .divheading{
     background-image: url("/images/lab-4.jpg");
@@ -53,7 +53,7 @@ a.accelerator{
     position: relative;
 }
 .seconddiv{
-    background-color: #f84;
+    background-color: gray;
     height: 150px;
     width: 60%;
     position: absolute;
@@ -63,7 +63,8 @@ a.accelerator{
 h1.h1color{
     color:#fff;
     display: block;
-    margin:40px 20px;
+    margin:20px 20px;
+    font-size: 1.6rem;
 }
 /* The container maincontainer is inside */
 .maincontainer{
@@ -81,6 +82,9 @@ p{
     font-size: .9rem;
     font-weight: 500;
     line-height: 1.8;
+}
+sup{
+    font-size: .8rem;
 }
 /* the container that contain all the text and form */
 .mainsection{
@@ -133,6 +137,15 @@ img.formimage{
     width: 95%;
     outline: none;
 }
+.input-control select {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 95%;
+    outline: none;
+}
 .input-control textarea {
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -161,13 +174,35 @@ img.formimage{
 }
 @media screen and (max-width:1024px) {
 .overContainer{
-    margin: 50px;
+    margin: 30px 50px;
+    }
+    a.apply{
+        margin: 10px 40px 20px 20px;
+        padding:2px 20px;
+    }
+    /* the Ip accelerator style */
+    a.accelerator{
+        margin: 10px 0 0 auto;
+    }
+    .imagediv img{
+        margin: -10px 0 0 30px;
     }
 }
-@media screen and (max-width:850px) {
-    .overContainer{
-        margin: 50px 20px;
-        }
+@media screen and (max-width:850px) {      
+        .overContainer{
+            margin: 30px 10px;
+            }
+            a.apply{
+                margin: 10px 10px 20px 20px;
+                padding:2px 20px;
+            }
+            /* the Ip accelerator style */
+            a.accelerator{
+                margin: 10px 0 0 auto;
+            }
+            .imagediv img{
+                margin: -10px 0 0 10px;
+            }
         h1.h1color{
             font-size: 1.2rem;
         }
@@ -180,6 +215,10 @@ img.formimage{
     .secondsection{
         width: 100%;
     }
+    h1.h1color{
+        font-size: 1.6rem;
+        margin:10px 20px;
+    }
 }
 @media screen and (max-width:600px) {
     .overContainer{
@@ -187,6 +226,10 @@ img.formimage{
         }
         .imagediv{
          flex-direction: column;
+        }
+        .imagediv img{
+            display: block;
+            margin: 0 auto;
         }
         /* The apply button */
 a.apply{
@@ -206,8 +249,8 @@ a.accelerator{
             width: 70%;
         }
         h1.h1color{
-            font-size: 1.2rem;
-            margin:20px 20px;
+            font-size: 1.4rem;
+            margin:2px 20px;
         }
     .maincontainer{
         margin: 5% 0 0 0;
