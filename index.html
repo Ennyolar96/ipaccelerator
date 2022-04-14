@@ -24,14 +24,14 @@
 <body>
     <div class="container">
         <div class="imagediv">
-            <img src="/images/new-png-mleage-1-7.png" alt="image">
+            <img src="/images/marketleagnewlogo.png" alt="image">
             <a class="accelerator" target="_blank" href="https://marketleag.com/ipaccelerator.html"> IP Accelerator</a>
             <a class="apply" href="#form">Apply</a>
         </div>
         <div class="overContainer">
        <div class="divheading">
            <div class="seconddiv">
-            <h1 class="h1color">Marketleag Launches IP Development Incentive for Africans</h1>
+            <h1 class="h1color">Marketleag Launches <br> IP Development Incentive for Africans</h1>
            </div>
        </div>
         <div class="maincontainer">
@@ -43,7 +43,7 @@
                     <h2>Benefits</h2>
                     <p>All successful Applicants would:</p>
                     <ul>
-                        <li>Participate in free eight (8) weeks IP Development Workshop;</li>
+                        <li>Participate in free four (4) weeks IP Development Workshop;</li>
                         <li>Enjoy reduction of about 40-50% in the cost of protecting the IPRs in the local or foreign economy (depending on the nature/type of the asset);</li>
                         <li>Have opportunity to access to our commercial line to exploit the assets commercially.</li>
                     </ul>
@@ -60,11 +60,11 @@
                             </ul>
                         <li>Application is open to all age groups and gender.</li>
                     </ul>
-                    <h2>Process</h2>
-                    <p>Application period: April 15<sup>th</sup>, 2022 to May 14<sup>th</sup>, 2022</p>
-                    <p>Application processing: May 15<sup>th</sup>, 2022 to May 31<sup>st</sup>, 2022</p>
-                    <p>IP Development Workshop: June 3<sup>rd</sup>, 2022 to June 24<sup>th</sup>, 2022</p>
-                    <p>Assets filling and registration commences on July 1<sup>st</sup>, 2022</p>
+                    <h2>Application Process</h2>
+                    <p>Application period: April 15, 2022 to May 14, 2022</p>
+                    <p>Application processing: May 15, 2022 to May 31, 2022</p>
+                    <p>IP Development Workshop: June 3, 2022 to June 30, 2022</p>
+                    <p>Assets filling and registration commences on July 1, 2022</p>
                     <p>Access to commercial line continues round the years</p>
                     
                     <h3>Share of incentive for Protection</h3>
@@ -76,6 +76,7 @@
                     <img class="formimage" src="/images/congrat-2.png" alt="">
                         <h5 class="applyHere">Application Form</h5>
                     <form action="/" id="form">
+
                       <div class="input-control">
                         <label for="name">Name <span class="sign">*</span></label>
                         <input type="text" name="name" id="name" required>
@@ -90,31 +91,64 @@
                             <label for="Email">Email <span class="sign">*</span></label>
                         <input type="email" name="email" id="email" required>
                         </div>
+                        <p class="ipselect">Select your IP type</p>
+                       <div class="checkinput">
+                           <input type="checkbox" name="Invention" id="">
+                           <label for="Invention">Invention</label>
+                       </div>
 
-                        <div class="input-control">
-                            <label for="country">Country <span class="sign">*</span></label>
-                        <input type="text" name="country" id="country" required>
-                        <p id="your"></p>
-                        </div>
+                       <div class="checkinput">
+                        <input type="checkbox" name="Shape of items and design" id="">
+                        <label for="Shape of items and design">Shape of items and design</label>
+                    </div>
 
+                    <div class="checkinput">
+                        <input type="checkbox" name="Brand and logo" id="">
+                        <label for="Brand and logo">Brand and logo</label>
+                    </div>
+
+                    <div class="checkinput">
+                        <input type="checkbox" name="Plant varieties" id="">
+                        <label for="Plant varieties">Plant varieties</label>
+                    </div>
+
+                    <div class="checkinput">
+                        <input type="checkbox" name="Literary and artistic works" id="">
+                        <label for="Literary and artistic works">Literary and artistic works</label>
+                    </div>
+                    <br>
                         <div class="input-control">
-                            <label for="country">Select your IP type<span class="sign">*</span></label>
-                            <select name="IP_Type" id="">
-                                <option value="Invention">Invention</option>
-                                <option value="Design">Design</option>
-                                <option value="Brand and logo">Brand and logo</option>
-                                <option value="Plant varieties">Plant varieties</option>
-                                <option value="Copyright">Copyright</option>
+                            <label for="country">Select Country<span class="sign">*</span></label>
+                            <select name="country" id="">
+                                <option value="Country">Country</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value=" Kenya"> Kenya</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
                             </select>
+                            <p id="error"></p>
                         </div>
 
                        <div class="input-control">
                         <label for="message">Message <span class="sign">*</span></label>
-                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Briefly describe your asset in this section"></textarea>
                        </div>
 
-                        <input type="checkbox" name="confirm" id="confirm" onclick="open_btn(this)">
-                        <label for="">I satisfy that I did not disclose any confidential/technical information about my intellectual property.</label>
+                       <div class="check_input">
+                        <input type="checkbox" name="confirm" id="confirm" class="checkinput">
+                        <label for="">I certify that I did not disclose any confidential/technical information about my intellectual property in this application.</label>
+                       </div>
+
+                       <div class="check_input">
+                        <input type="checkbox" name="confirm2" id="confirm2" class="checkinput">
+                        <label for=""> I agree to allow Marketleag to store and process my personal information provided for this application.</label>
+                       </div>
 
                         <button type="submit" disabled id="btn">Submit</button>
                     </form>

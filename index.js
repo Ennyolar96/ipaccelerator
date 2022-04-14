@@ -1,21 +1,17 @@
-var country = document.getElementById("country");
-var your = document.getElementById("your");
-var myCountry = ["Nigeria", "Kenya", "Ghana", "South Africa", "Tanzania", "Zimbabwe", "Somalia", "Liberia", "Zambia", "Sierra Leone"];
-
-function open_btn() {
-    // Get the checkbox
-    var confirm = document.getElementById("confirm");
-    // Get the output text
-    var btn = document.getElementById("btn");
-    
-    // If the checkbox is checked, display the output text
-    if (confirm.checked == true){
-        registrationSection.style.display = "block";
-    } else {
-        registrationSection.style.display = "none";
-    }
-  }
-  function open_btn(confirm) {
-    var btn = document.getElementById("btn");
-    btn.disabled = confirm.checked ? false : true;
+var checkInput = document.querySelectorAll(".checkinput");
+for(var i = 0; i < checkInput.length; i++){
+   var enable_btn = document.querySelectorAll(".checkinput")[i]
+   enable_btn.addEventListener("click", function(){
+        var btn = document.getElementById("btn");
+        btn.disabled = confirm2.checked ? false : true;
+    })
 }
+
+// const country = document.getElementById('Country').value;
+// var brn = document.getElementById("btn")
+// // const countryValue = country.value.trim();
+// btn.addEventListener("click", function(){
+//     if(countryValue == 'Country') {
+//        document.getElementById("error").innerHTML='Select A Country';
+//     }
+// })

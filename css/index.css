@@ -7,6 +7,7 @@ body{
     font-weight: 500;
     overflow-x: hidden;
     background: linear-gradient(to top, gray -20%, #f0f0f0 120%);
+    /* background-color: #fff; */
 }
 .container{
     position: relative;
@@ -41,7 +42,7 @@ a.accelerator{
 .imagediv img{
     height: 50px;
     width: 200px;
-    margin: -10px 0 0 130px;
+    margin: 10px 0 0 130px;
 }
 .divheading{
     background-image: url("/images/lab-4.jpg");
@@ -53,18 +54,19 @@ a.accelerator{
     position: relative;
 }
 .seconddiv{
-    background-color: gray;
+    background-color: #000;
     height: 150px;
     width: 60%;
     position: absolute;
     top: 100px;
+    left: 5px;
     border-radius:0 8px 0 0;
 }
 h1.h1color{
     color:#fff;
     display: block;
     margin:20px 20px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 /* The container maincontainer is inside */
 .maincontainer{
@@ -158,6 +160,7 @@ img.formimage{
     max-height: 100px;
     outline: none;
 }
+
 #form button{
     border: none;
     border-radius: 8px;
@@ -172,6 +175,9 @@ img.formimage{
 .sign{
     color: red;
 }
+p.ipselect{
+    margin: 10px 0 5px 0;
+}
 @media screen and (max-width:1024px) {
 .overContainer{
     margin: 30px 50px;
@@ -185,7 +191,13 @@ img.formimage{
         margin: 10px 0 0 auto;
     }
     .imagediv img{
-        margin: -10px 0 0 30px;
+        margin: 10px 0 0 30px;
+    }
+    img.formimage{
+     display: none;
+    }
+    .applyHere{
+        margin: 30px 0 20px 0;
     }
 }
 @media screen and (max-width:850px) {      
@@ -201,7 +213,7 @@ img.formimage{
                 margin: 10px 0 0 auto;
             }
             .imagediv img{
-                margin: -10px 0 0 10px;
+                margin: 10px 0 0 10px;
             }
         h1.h1color{
             font-size: 1.2rem;
@@ -239,6 +251,7 @@ a.apply{
     text-align: center;
     color: #fff;
     display: block;
+    margin: 0 150px;
 }
 /* the Ip accelerator style */
 a.accelerator{
@@ -249,7 +262,7 @@ a.accelerator{
             width: 70%;
         }
         h1.h1color{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin:2px 20px;
         }
     .maincontainer{
@@ -266,11 +279,18 @@ a.accelerator{
             top: 100px;
         }
         h1.h1color{
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin:20px 20px;
+        }
+        a.apply{
+            margin: 0 80px;
         }
 /*  the headings */
 h1,h2,h3,h4,h5,h6{
     font-size: 1.2rem;
+    margin-left: 5px;
+}
+p{
+    margin-left: 5px;
 }
 }
