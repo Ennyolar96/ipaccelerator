@@ -7,6 +7,12 @@ for(var i = 0; i < checkInput.length; i++){
     })
 }
 
+// years showing on the copyright
+
+var dDate = new Date;
+var dYear = dDate.getFullYear();
+document.getElementById("gettingDate").innerHTML = dYear;
+
 // const country = document.getElementById('Country').value;
 // var brn = document.getElementById("btn")
 // // const countryValue = country.value.trim();
